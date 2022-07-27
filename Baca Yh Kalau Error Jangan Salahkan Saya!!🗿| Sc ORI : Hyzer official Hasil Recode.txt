@@ -1,0 +1,102 @@
+═══════════[ SC ]═══════════════
+
+SC ORI : HYZERR OFFICIAL
+https://youtu.be/AXPzjQ5jxx8
+SC RECODE : VENBOTZ
+https://VenBotz/VenBotzV2.5
+Jangan Lupa Yh Di Kasih Star Nya!!!
+
+══════════════════════════════
+
+Kalau Tidak Ngerti Tanya Aja Ke Saya
+Jangan Spam Kalau Saya Tidak Jawab
+Dan Jangan Kirim Virtex
+: https://wa.me/6281248537085
+Bakal Fash Respon Kalau Kaga Fash Respon 
+Berarti Saya Lagi Main Atau Sibuk!!
+
+══════════════════════════════
+
+👤:Bang Bisa Di Run Di Termux Kah?
+🗣️:Bisa Asalkan Ada Folder "Node_Modules"
+Kalau Kaga Ada Bisa Pakai Command Ini Di Termux
+
+══════[Ngambil Node_modules With Termux]════════
+
+-cd /sdcard/NamaSc
+-pkg i yarn
+-yarn
+Kalau Udh Tinggal
+-npm i
+-npm start
+Kalau Kaga Kode Qr Tidak Muncul Hapus file Bernama :
+hyzer.data.json Itu Nama Session Nya Kalau Mau Kalian Ganti Dengan
+Session Kalian Kalian Tinggal Ubah Aja Nama Session Kalian 
+Menjadi "hyzer.data.json"
+
+════════════[Note/Pertanyaan]═════════════════
+
+Ngedit Pakai Apk Apa? : QuickEdit Dan ZArchiver/MTmanager
+Rekomendasi Pakai QuickEdit
+
+🗣️: Ngedit Owner dll di mana?
+👤: Di "Config.js
+🗣️: Ngedit Menu Atau Fitur Lainnya Di Mana Bang?
+👤: Ngedit Menu Dll Di Plugins Itu Semua Fitur Nya
+Kalau Mau Ngedit Tampilan Menu Nya Ada Di
+Plugins>Main-Menu
+
+👤: Bang Kok Kaga Bisa Di Upload Di Github?
+🗣️: Kalau Kaga Bisa Hapus Folder Bernama ".git"
+
+👤: Bang Kok Banyak Fitur Yang Error?
+🗣️: Itu Karna Apikey Nya Experide/Habis Masa Trial 10 Hari
+🗣️: Free Apikey : Lolhuman, ZEEONEOFC, Dll kalian Bisa Liat
+Di Config.js Atau Main-menu.js
+
+Mekanya Kalau Mau Fitur Semua Bekerja
+Donasi !! : https://Trakter.com/VenBotz/tip
+Buat Beli Apikey!!!!!
+═══════════[PEROMOSI]══════════════
+
+-Minat? Langsung Chat Aja Owner/Saya
+-081248537085
+
+╭═══ 〔 SEWA BOT 〕 ════
+├⬡ 𝟏 ᗰIᑎᘜᘜᑌ *Rb 5k*
+├⬡ 2 ᗰIᑎᘜᘜᑌ *Rb 10k*
+├⬡ 3 ᗰIᑎᘜᘜᑌ *Rb 15k*
+├⬡ 1 ᗷᑌᒪᗩᑎ *Rb 20k*
+└═══════════════
+╭═══════════════════════
+║╭──❉ 〔 𝐕𝐈𝐀 𝐓𝐎𝐏𝐔𝐏 〕 ❉──────
+║│➸ *Dana* : 081248537085
+║│➸ *Ovo* : 081248537085
+║│➸ *GoPay* : 081248537085
+║│➸ *Pulsa Telkomsel + 2k*: 081248537085
+║│➸ *Owner*: wa.me/6281248537085
+║╰─────────────────────
+╰═══════════════════════
+
+═══════════[ DATABASE ]═════════════
+
+Buat Yang Kaga Tau Database Itu apa, Database Ada
+Data Yang Ke Simpen Di Bot 
+Yang Ke Simpen Apa Aja? :
+Money, exp, Level, Inventory Rpg, Dll
+
+══════════[HOW?]═══════════════
+
+Kalau Mau Dapetin Database Nya Kalian 
+Langsung Ketik .getdatabase Lalu Kalian Cari Folder
+databse.json Menggunakan Apk: Zarchiver
+Download Di: App Store, Play Store, Dan Google
+
+═════════[ZArchiver]══════════════
+
+Open ZArchiver
+Android>WhatsApp>Media>WhatsApp Documents
+
+Dan Kalian Salin File Bernama "Database.json"
+Kalau Kalian Udh Beberapa Kali Ambil Database Maka Nama
+Nya Akan Seperti "Database-1.json" Dan Seterus Nya
