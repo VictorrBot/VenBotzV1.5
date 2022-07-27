@@ -15,7 +15,6 @@ let handler = async (m, { conn }) => {
 ◩─────〔 *PROFILE*〕──────◩
  • *Name:* ${username} ${registered ? '(' + name + ') ': ''}
  • *Tag:* @${who.replace(/@.+/, '')}
- • *Status:* ${pasangan ? jodoh : 'Jomblo' }
  • *Number:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
  • *Link:* https://wa.me/${who.split`@`[0]}
 ${registered ? ' • *Age:* ' + age : ''}
