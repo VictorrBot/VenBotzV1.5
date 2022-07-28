@@ -381,7 +381,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": `"↳⬣📚┃ALL COMMAND"`,
                   "description": "Menampilkan Semua Perintah Bot",
                   "rowId": '.? all'
-                  }, {
+                }, {
                   "title": "↳⬣📝┃ABSEN & VOTING",
                   "description": "Absen Dan Vote Untuk Di Grup",
                   "rowId": `${_p}? absen`
@@ -429,11 +429,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "↳⬣👥┃GROUP",
                   "description": "Menu Yang Hanya Bisa Dipakai Di Grup",
                   "rowId": `${_p}? group`
-                  }],
-                  "title": "Create By ©Reza"
-                }, {
-                  }],
-                  "title": "Donasi Seiklash Nya"
                 }, {
                   "title": "↳⬣🖼️┃IMAGE",
                   "description": "Mendapatkan Image Random Dari Bot",
@@ -621,8 +616,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            },
            {
              quickReplyButton: {
-               displayText: '[🏷️] Sewa Bot ⬣',
-               id: '.sewa',
+               displayText: '[🏷️] tqto ⬣',
+               id: '.tqto',
              }
            }]
          }
