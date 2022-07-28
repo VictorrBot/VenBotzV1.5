@@ -39,24 +39,6 @@ const defaultMenu = {
 ⫹⫺ Uptime: *%uptime (%muptime)*
 ⫹⫺ Database: %rtotalreg dari %totalreg
 ⫹⫺ Ram : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
-╭━━━━━[ *INFO UPDATE* ]━━━━━━━━┈⎔
-│ 
-│  *Update In Progres [13-07-22]*
-│  *Done [28-07-22] Complate All
-│
-│ *Request Fitur? Tinggal Ketik .request <Namefitur>*
-│ *Fitur Yang Di Tambahkan Total 117 Fitur*
-│*Fitur Sebelum Nya [431] Sekarang [548]
-│
-│ *Tidak Menjamin Semua Fitur Bekerja!!*
-│
-│ *Note Setaip Bulan Data Di Dalam Bot Akan Di Reset*
-│🗣️:  *Apa Aja Yang Di Reset Bang?*
-│👤:  *Money, Inventory, Exp, Level, Limit, Dll*
-│
-│                     *Donasi Lah Banh*🗿☝️
-╰━━━━━━━━━━━━━━━━━━━━━━━━┈⎔
-
 %readmore`.trimStart(), 
   header: '╭═══[ %category ]════···',
   body: '┢⎔ %cmd %islimit %isPremium',
