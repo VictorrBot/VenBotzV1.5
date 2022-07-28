@@ -39,6 +39,24 @@ const defaultMenu = {
 ⫹⫺ Uptime: *%uptime (%muptime)*
 ⫹⫺ Database: %rtotalreg dari %totalreg
 ⫹⫺ Ram : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+╭━━━━━[ *INFO UPDATE* ]━━━━━━━━┈⎔
+│ 
+│  *Update In Progres [13-07-22]*
+│  *Done [28-07-22] Complate All
+│
+│ *Request Fitur? Tinggal Ketik .request <Namefitur>*
+│ *Fitur Yang Di Tambahkan Total 117 Fitur*
+│*Fitur Sebelum Nya [431] Sekarang [548]
+│
+│ *Tidak Menjamin Semua Fitur Bekerja!!*
+│
+│ *Note Setaip Bulan Data Di Dalam Bot Akan Di Reset*
+│🗣️:  *Apa Aja Yang Di Reset Bang?*
+│👤:  *Money, Inventory, Exp, Level, Limit, Dll*
+│
+│                     *Donasi Lah Banh*🗿☝️
+╰━━━━━━━━━━━━━━━━━━━━━━━━┈⎔
+
 %readmore`.trimStart(), 
   header: '╭═══[ %category ]════···',
   body: '┢⎔ %cmd %islimit %isPremium',
@@ -51,7 +69,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'asupan', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
+  let arrayMenu = ['all', 'absen', 'asupan', 'rpg', 'anime', 'shope', 'primbon', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'MENU UTAMA',
@@ -59,6 +77,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'asupan': 'ASUPAN',
   'absen': 'MENU ABSEN',
   'anime': 'MENU ANIME',
+  'shope': 'MENU SHOPE',
+  'primbon': 'MENU PRIMBON',
   'sticker': 'MENU CONVERT',
   'downloader': 'MENU DOWNLOADER',
   'xp': 'MENU EXP',
@@ -93,6 +113,12 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'anime') tags = {
   'anime': 'MENU ANIME',
+  }
+  if (teks == 'shope') tags = {
+  'shope': 'MENU SHOPE',
+  }
+  if (teks == 'primbon') tags = {
+  'primbon': 'MENU PRIMBON',
   }
   if (teks == 'asupan') tags = {
   'asupan': 'MENU ASUPAN',
@@ -327,6 +353,10 @@ let menuu = `\n╭━━━━┈⎔ *INFO BOT*
 │ *Date* : ${week} ${date}
 │ *Runtime* : ${uptime}
 ╰━━━━━━━━━━━━┈⎔
+*Request Fitur? Tinggal Ketik .request <fitur>*
+--------------------------------------------------------------------------------
+*Kalau Ada Kesalahan Maklumin Saya Juga
+Manusia* 🗿🗿
 
 ICON INFO
 Ⓛ = Fitur Memakai Limit
@@ -354,6 +384,14 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "↳🇯🇵┃ANIME",
                   "description": "Menu Khusus Pencinta Anime",
                   "rowId": `${_p}? anime`
+                }, {
+                  "title": "↳⬣💎┃SHOPE GAME",
+                  "description": "Menu Shop, Top Up Game",
+                  "rowId": `${_p}? shope`
+                }, {
+                  "title": "↳⬣🤡┃PRIMBON",
+                  "description": "Menu Primbon",
+                  "rowId": `${_p}? primbo`
                 }, {
                   "title": "↳♀️┃ASUPAN",
                   "description": "Asupan Cecan Di Berbagai Negara",
@@ -460,7 +498,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? textpro`
                 }
                   ],
-                "title": "LEXA BOT MENU LIST"
+                "title": "LIST MENU"
               },               {
                 "rows": [{
                   "title": `↳🤴┃OWNER BOT`,
@@ -471,7 +509,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Informasi Bot Ini",
                   "rowId": `${_p}? info`
                 }],
-                "title": "LEXA BOT INFORMATION"
+                "title": "INFORMASI BOT"
               }
             ], "contextInfo": {
               "stanzaId": m.key.id,
@@ -545,35 +583,35 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             hydratedFooterText: wm2, 
             hydratedButtons: [{
             urlButton: {
-               displayText: 'Ikuti Akun IG Clara',
+               displayText: '[🚀] Github Ven',
                url: web
              }
 
            },
              {
              urlButton: {
-               displayText: 'Official Gc', 
+               displayText: '[🎟️] Official Gc', 
                url: gc
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '👑Owner',
+               displayText: '[👑] Owner',
                id: '.owner',
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '💰Donasi',
+               displayText: '[💰] Donasi',
                id: '.donasi',
              }
 
            },
            {
              quickReplyButton: {
-               displayText: '🏷️Credits',
+               displayText: '[🏷️] Credits',
                id: '.tqto',
              }
            }]
@@ -591,7 +629,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     throw e
   }
 }
-handler.help = ['menu', 'help', '?']
+handler.help = ['menu', 'help', '?', 'bot']
 handler.tags = ['main']
 handler.command = /^(menu|help|\?)$/i
 handler.owner = false
