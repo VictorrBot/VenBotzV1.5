@@ -288,7 +288,7 @@ const fkontak = {
 }
 const fgclink = {
 	"key": {
-		"fromMe": true,
+		"fromMe": false,
 		"participant": "0@s.whatsapp.net",
 		"remoteJid": "0@s.whatsapp.net"
 	},
@@ -296,9 +296,9 @@ const fgclink = {
 		"groupInviteMessage": {
 			"groupJid": "0-1625305606@g.us",
 			"inviteCode": "mememteeeekkeke",
-			"groupName": "VenBotz-Private", 
-            "caption": "VenBotz Private Chat", 
-            'jpegThumbnail': fs.readFileSync('./media/Logo.jpg')
+			"groupName": "Mengter", 
+            "caption": "Halo bang jagoo", 
+            'jpegThumbnail': fs.readFileSync('./media/siang.jpg')
 		}
 	}
 }
@@ -381,7 +381,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": `"↳⬣📚┃ALL COMMAND"`,
                   "description": "Menampilkan Semua Perintah Bot",
                   "rowId": '.? all'
-                }, {
+                  }, {
                   "title": "↳⬣📝┃ABSEN & VOTING",
                   "description": "Absen Dan Vote Untuk Di Grup",
                   "rowId": `${_p}? absen`
@@ -429,6 +429,11 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "↳⬣👥┃GROUP",
                   "description": "Menu Yang Hanya Bisa Dipakai Di Grup",
                   "rowId": `${_p}? group`
+                  }],
+                  "title": "Create By ©Reza"
+                }, {
+                  }],
+                  "title": "Donasi Seiklash Nya"
                 }, {
                   "title": "↳⬣🖼️┃IMAGE",
                   "description": "Mendapatkan Image Random Dari Bot",
@@ -616,8 +621,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            },
            {
              quickReplyButton: {
-               displayText: '[🏷️] tqto ⬣',
-               id: '.tqto',
+               displayText: '[🏷️] Sewa Bot ⬣',
+               id: '.sewa',
              }
            }]
          }
