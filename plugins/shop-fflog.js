@@ -31,7 +31,7 @@ let handler = async m => m.reply(`
 ╰─────────────────────────
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['fflog']
-handler.tags = ['bisnis']
+handler.tags = ['shope']
 handler.command = /^(fflog)$/i
 handler.owner = false
 handler.mods = false
