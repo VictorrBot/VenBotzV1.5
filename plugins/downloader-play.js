@@ -28,12 +28,12 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (yt2 === false) throw 'Semua Server Gagal'
   let { dl_link, thumb, title, filesize, filesizeF } = yt
 let anu =  `*〔 PLAY 〕*\n
-[💬]  *Judul:* ${title}
-[🎵]  *Ukuran File Audio:* ${filesizeF}
-[🎥]  *Ukuran File Video:* ${yt2.filesizeF}
-[🌐]  *Server y2mate:* ${usedServer}
-[🖇️ ]  *Link Sumber:* 
-${[vid.url}
+*💬 Judul:* ${title}
+*🎵 Ukuran File Audio:* ${filesizeF}
+*🎥 Ukuran File Video:* ${yt2.filesizeF}
+*🌐 Server y2mate:* ${usedServer}
+*🖇️ Link Sumber:* 
+${vid.url}
 
 `
      let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(thumb)).buffer()}, { upload: conn.waUploadToServer }) 
@@ -45,28 +45,28 @@ ${[vid.url}
             hydratedFooterText: wm, 
             hydratedButtons: [{
              urlButton: {
-               displayText: '[👥] Official Gc',
+               displayText: 'Join My GC',
                url: gc
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '[🎥] VIDEO | 360p',
+               displayText: '🎥VIDEO | 360p',
                id: `.ytmp4 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: '[🎥] VIDEO | 720p',
+               displayText: '🎥VIDEO | 720p',
                id: `.ytv720 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: '[🎵] AUDIO | 128kbps',
+               displayText: '🎵AUDIO | 128kbps',
                id: `.ytmp3 ${vid.url}`,
              }
 
