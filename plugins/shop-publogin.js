@@ -15,7 +15,7 @@ let handler = async m => m.reply(`
 ╰─────────────────────────
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['pubglog']
-handler.tags = ['bisnis']
+handler.tags = ['shope']
 handler.command = /^(pubglog)$/i
 handler.owner = false
 handler.mods = false
