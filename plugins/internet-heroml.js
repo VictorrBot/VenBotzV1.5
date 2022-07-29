@@ -5,7 +5,7 @@ let handler = async(m, { conn, text }) => {
   if (!text) return conn.reply(m.chat, 'Harap Masukan nama hero', m)
 
   await m.reply('Searching...')
-    let res = await fetch(`https://x-restapi.herokuapp.com/api/heroml?q=${text}&apikey=BETA`)
+    let res = await fetch(`https://api.lolhuman.xyz/api/heroml?q=${text}&apikey=eaaf1291f2a82f005d8aad20`)
     let json = await res.json()
     if (res.status !== 200) throw await res.text()
     if (!json.status) throw json
