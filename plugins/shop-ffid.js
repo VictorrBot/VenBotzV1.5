@@ -55,7 +55,7 @@ let handler = async m => m.reply(`
 
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['ffid']
-handler.tags = ['shop']
+handler.tags = ['shope']
 handler.command = /^(ffid)$/i
 handler.owner = false
 handler.mods = false
