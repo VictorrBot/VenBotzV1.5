@@ -10,7 +10,7 @@ let handler = async m => m.reply(`
 ╰════════════════════════════════
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['shoppay']
-handler.tags = ['shop']
+handler.tags = ['shope']
 handler.command = /^(shoppay)$/i
 handler.owner = false
 handler.mods = false
