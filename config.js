@@ -19,8 +19,8 @@ global.web = 'https://github.com/Venbotz' //ubah jadi website lu, bisa link ig, 
 global.price1 = '◩─────〔 *SEWA*〕──────◩\n1 Ketik .sewa Untuk Menyewa Bot\n◩────────────────────◩'
 
 //=======『 Tampilan Dan Lainnya 』============//
-global.fotonya1 = 'https://telegra.ph/file/65f657f477c5f0aa8f203.jpg' //ganti jadi foto bot mu
-global.fotonya2 = 'https://telegra.ph/file/9e8adf8492e3c2b949d0b.jpg' //ini juga ganti 
+global.fotonya1 = 'https://telegra.ph/file/85266a2f31ee38c2fb535.png' //ganti jadi foto bot mu
+global.fotonya2 = 'https://telegra.ph/file/85266a2f31ee38c2fb535.png' //ini juga ganti 
 global.lolkey = 'lolhuman' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
 global.wm = '⌬ VenBotz'
