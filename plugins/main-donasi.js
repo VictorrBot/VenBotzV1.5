@@ -20,8 +20,6 @@ Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
 
 Contact person Owner:
 wa.me/${numberowner} (Owner)
-
-'Back', '.help', m) 
 }
 handler.help = ['donasi', 'donate']
 handler.tags = ['xp', 'info']
