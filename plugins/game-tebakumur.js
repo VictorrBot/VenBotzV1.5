@@ -9,7 +9,7 @@ let handler = async(m, { conn, text }) => {
     if (!text) return conn.reply(m.chat, 'Masukan Teksnya', m)
 
     await m.reply('Mencari...')
-	axios.get(`http://lolhuman.herokuapp.com/api/tebakumur?apikey=eaaf1291f2a82f005d8aad20&name=${text}`).then ((res) => {
+	axios.get(`https://api.lolhuman.xyz/api/tebakumur?apikey=eaaf1291f2a82f005d8aad20&name=${text}`).then ((res) => {
 	 	let hasil = `💬Namamu : ${text}\n🎂Umurmu : ${res.data.result.age}`
 
     conn.reply(m.chat, hasil, m)
