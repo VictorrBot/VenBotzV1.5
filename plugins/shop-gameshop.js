@@ -11,7 +11,7 @@ let handler = async m => m.reply(`
 ╰═══════════════════════
 `.trim()) // Tambah n kalo mau
 handler.help = ['gamshop']
-handler.tags = ['shop']
+handler.tags = ['shope']
 handler.command = /^gamshop$/i
 handler.owner = false
 handler.mods = false
