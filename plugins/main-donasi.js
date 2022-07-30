@@ -5,7 +5,7 @@ let handler = async m => m.reply(`
 ║│➸ *Ovo* : 081248537085
 ║│➸ *GoPay* : 081248537085
 ║│➸ *Pulsa Telkomsel*: 081248537085
-║│➸ *Trakteer*: https://Trakteer/VenBotz/Tip
+║│➸ *Trakteer*: https://trakteer.id/venBotz/tip
 ║╰─────────────────────
 ╰═══════════════════════
 *Donasi Se Ikhlas Nya, Gk Maksa!*
