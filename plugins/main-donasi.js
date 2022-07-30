@@ -1,12 +1,4 @@
-let fs = require('fs')
-let handler = async (m, { conn }) => {
-let teks = 'donasi'
-let dana = global.dana
-let pulsa = global.pulsa
-let gopay = global.gopay
-let numberowner = global.numberowner
-let anu = `Hai 👋
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
+let handler = async m => m.reply(`
 ╭═══════════════════════
 ║╭──❉ 〔  *DONASI*  〕 ❉──────
 ║│➸ *Dana* : 081248537085
@@ -17,12 +9,9 @@ Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
 ║╰─────────────────────
 ╰═══════════════════════
 *Donasi Se Ikhlas Nya, Gk Maksa!*
-
-Contact person Owner:
-wa.me/${numberowner} (Owner)
-}
-handler.help = ['donasi', 'donate']
-handler.tags = ['xp', 'info']
-handler.command = /^(donasi|donate)$/i
+`.trim()) // Tambah sendiri kalo mau
+handler.help = ['donasi']
+handler.tags = ['info']
+handler.command = /^dona(te|si)$/i
 
 module.exports = handler
