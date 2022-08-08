@@ -475,9 +475,9 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 "title": "▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」"
               },               {
                 "rows": [{
-                 "title": |🎐 › 𐐪-〚 Creator 〛-𐑂`,
-                 "description": "Kontak Creator Ku ^~^",
-                 "rowId": `${_p} owner`
+                  "title": `↳⬣🤴┃OWNER BOT`,
+                  "description": "Nomor Owner",
+                  "rowId": `.owner`
                 },{
                   "title": "ℹ️ 〉ɞ 『 Info 』",
                   "description": "Fitur fitur info...",
