@@ -559,28 +559,28 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            },
              {
              urlButton: {
-               displayText: '[💌]  *Official Gc*', 
+               displayText: '[💌]Official Gc', 
                url: gc
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '[🦅]  *Owner*',
+               displayText: '[🦅]Owner',
                id: '.owner',
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '[🚀]  *Speed Test*',
+               displayText: '[🚀]Speed Test',
                id: '.ping',
              }
 
            },
            {
              quickReplyButton: {
-               displayText: '[🏷️]  *Credits*',
+               displayText: '[🏷️]Credits',
                id: '.tqto',
              }
            }]
@@ -606,7 +606,7 @@ handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-handler.register = false
+handler.register = true
 
 handler.admin = false
 handler.botAdmin = false
