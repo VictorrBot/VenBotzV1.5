@@ -357,7 +357,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 "rows": [{
                   "title": "💬 〉ɞ 『 Semua Perintah 』",
                   "description": "Memberikan Semua Fitur ⌬ VenBotz",
-                  "rowId": `${_p} all`
+                  "rowId": '? all'
                   }, {
                   "title": "🗳️ 〉ɞ 『 Vote & Absen 』",
                   "description": "Group only!",
