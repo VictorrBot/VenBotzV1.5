@@ -355,65 +355,65 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             sections: [
                 {
                 "rows": [{
-                  "title": `"↳📚┃ALL COMMAND"`,
-                  "description": "Menampilkan Semua Perintah Bot",
-                  "rowId": '.? all'
+                  "title": "💬 〉ɞ 『 Semua Perintah 』",
+                  "description": "Memberikan Semua Fitur ⌬ VenBotz",
+                  "rowId": `${_p} all`
                   }, {
-                  "title": "↳📝┃ABSEN & VOTING",
-                  "description": "Absen Dan Vote Untuk Di Grup",
-                  "rowId": `${_p}? absen`
+                  "title": "🗳️ 〉ɞ 『 Vote & Absen 』",
+                  "description": "Group only!",
+                  "rowId": `${_p} vote`
                 }, {
-                  "title": "↳🇯🇵┃ANIME",
-                  "description": "Menu Khusus Pencinta Anime",
-                  "rowId": `${_p}? anime`
+                  "title": "⛩️ 〉ɞ 『 Anime 』",
+                  "description": "Bang? Anjir wibu...",
+                  "rowId": `${_p} anime`
                 }, {
                   "title": "↳♀️┃ASUPAN",
                   "description": "Asupan Cecan Di Berbagai Negara",
                   "rowId": `${_p}? asupan`
                 }, {
-                  "title": "↳🎇┃STICKER & CONVERTER",
-                  "description": "Membuat Sticker Dengan Kreativitas",
-                  "rowId": `${_p}? sticker`
+                  "title": "🎫 〉ɞ 『 Sticker 』",
+                  "description": "Membuat sticker yang unik!",
+                  "rowId": `${_p} sticker`
                 }, {
-                  "title": "↳⏬┃DOWNLOADER",
-                  "description": "Mendownload File Lewat Bot",
-                  "rowId": `${_p}? downloader`
+                  "title": "📥 〉ɞ 『 Downloader 』",
+                  "description": "Download Sesuatu diBot!",
+                  "rowId": `${_p} downloader`
                 }, {
-                  "title": "↳✨┃EXP & LIMIT",
-                  "description": "Pasangan Menu RPG",
-                  "rowId": `${_p}? xp`
+                  "title": "📈 〉ɞ 『 Exp & Limit 』",
+                  "description": "Ayo tingkatkan level mu..!",
+                  "rowId": `${_p} xp`
                 }, {
-                  "title": "↳🎡┃FUN",
-                  "description": "Bersenang Senang Melalui Bot",
-                  "rowId": `${_p}? fun`
+                  "title": "🧩 〉ɞ 『 Fun 』",
+                  "description": "Sangat Family Friendly...",
+                  "rowId": `${_p} fun`
                 }, {
-                  "title": "↳🎮┃GAME",
-                  "description": "Permainan Tim Maupun Solol",
-                  "rowId": `${_p}? game`
+                  "title": "🎮 〉ɞ 『 Game 』",
+                  "description": "Gamenya seru seru kak...",
+                  "rowId": `${_p} game`
                 }, {
                   "title": "↳🧰┃GITHUB",
                   "description": "Unduh / Search Github Lewat Bot",
                   "rowId": `${_p}? github`
                 }, {
-                  "title": "↳👥┃GROUP",
-                  "description": "Menu Yang Hanya Bisa Dipakai Di Grup",
-                  "rowId": `${_p}? group`
+                  "title": "👥 〉ɞ 『 Group 』",
+                  "description": "Group Only!",
+                  "rowId": `${_p} group`
                 }, {
                   "title": "↳🖼┃IMAGE",
                   "description": "Mendapatkan Image Random Dari Bot",
                   "rowId": `${_p}? image`
                 }, {
-                  "title": "↳🌐┃INTERNET",
-                  "description": "Menjelajahi Dunia Maya",
-                  "rowId": `${_p}? internet`
+                  "title": "💻 〉ɞ 『 Internet 』",
+                  "description": "Cari Sesuatu yang menarik!",
+                  "rowId": `${_p} internet`
                 }, {
-                  "title": "↳🕋┃ISLAMIC",
-                  "description": "Menu Tentang Islam",
-                  "rowId": `${_p}? islam`
+                  "title": "☪️ 〉ɞ 『 Islamic 』",
+                  "description": "Tobat Yuk Kak...",
+                  "rowId": `${_p} islami`
                 }, {
-                  "title": "↳🐚┃KERANG",
-                  "description": "Bermain Dengan Kerang",
-                  "rowId": `${_p}? kerang`
+                  "title": "🐚 〉ɞ 『 Kerang 』",
+                  "description": "Menurut Kerang ajaib...!",
+                  "rowId": `${_p} kerangajaib`
                 }, {
                   "title": "↳✒️┃MAKER",
                   "description": "Membuat Karya Seni",
@@ -423,21 +423,21 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Hanya Owner Yang Bisa Meng-Akses",
                   "rowId": `${_p}? owner`
                 }, {
-                  "title": "↳🎙┃PENGUBAH SUARA",
-                  "description": "Ubah Suaramu",
-                  "rowId": `${_p}? suara`
+                  "title": "🎙️ 〉ɞ 『 Voice 』",
+                  "description": "Voice Changer...",
+                  "rowId": `${_p} audio`
                 }, {
-                  "title": "↳ ⭐┃PREMIUM",
-                  "description": "Untuk Dia Yang Mendapatkan Gelar Premium",
-                  "rowId": `${_p}? premium`
+                  "title": "🌟 〉ɞ 『 Premium 』",
+                  "description": "Premium Users Only!",
+                  "rowId": `${_p} premium`
                 }, {
-                  "title": "↳📑┃QUOTES",
-                  "description": "Motivasi?",
-                  "rowId": `${_p}? quotes`
+                  "title": "📑 〉ɞ 『 Quotes 』",
+                  "description": "Random Teks...",
+                  "rowId": ".? quotes"
                 }, {
-                  "title": "↳🌱┃RPG",
-                  "description": "Game Bot WhatsApp Yang Populer",
-                  "rowId": `${_p}? rpg`
+                  "title": "🌱 〉ɞ 『 Rpg 』",
+                  "description": "Game Epic Rpg ! ",
+                  "rowId": `${_p} rpg`
                 }, {
                   "title": "↳🔭┃STALKER",
                   "description": "Menguntit Mantan Ya?",
@@ -447,17 +447,17 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Short Link Melalui Bot",
                   "rowId": `${_p}? shortlink`
                 }, {
-                  "title": "↳🛠│TOOLS MENU",
-                  "description": "Alat Canggih Yang Berguna",
-                  "rowId": `${_p}? tools`
+                  "title": "🧰 〉ɞ 『 Tools 』",
+                  "description": "Mungkin ini bisa membantu mu...",
+                  "rowId": `${_p} tools`
                 }, {
                   "title": "↳📃┃TEXT MAKER",
                   "description": "Membuat Text Menjadi Indah",
                   "rowId": `${_p}? text`
                 }, {
-                  "title": "↳🔞┃HENTAI",
-                  "description": "Tidak Untuk Anak Anak",
-                  "rowId": `${_p}? nsfw`
+                  "title": "🔞 〉ɞ 『 Nsfw 』",
+                  "description": "Adick adick jangan liat ya...",
+                  "rowId": `${_p} nsfw`
                 }, {
                   "title": "↳🎰┃RANDOM",
                   "description": "Kurang Kerjaan Mampir Saja Kesini",
@@ -472,18 +472,18 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? textpro`
                 }
                   ],
-                "title": "LEXA BOT MENU LIST"
+                "title": "▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」"
               },               {
                 "rows": [{
-                  "title": `↳🤴┃OWNER BOT`,
-                  "description": "Save Kontak Clara:(",
-                  "rowId": `.owner`
+                 "title": |🎐 › 𐐪-〚 Creator 〛-𐑂`,
+                 "description": "Kontak Creator Ku ^~^",
+                 "rowId": `${_p} owner`
                 },{
-                  "title": "↳🤖┃BOT",
-                  "description": "Informasi Bot Ini",
-                  "rowId": `${_p}? info`
+                  "title": "ℹ️ 〉ɞ 『 Info 』",
+                  "description": "Fitur fitur info...",
+                  "rowId": `${_p} info`
                 }],
-                "title": "LEXA BOT INFORMATION"
+                "title": "▮𝗜𝗻𝗳𝗼 」"
               }
             ], "contextInfo": {
               "stanzaId": m.key.id,
@@ -557,35 +557,35 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             hydratedFooterText: wm2, 
             hydratedButtons: [{
             urlButton: {
-               displayText: 'Ikuti Akun IG Clara',
+               displayText: '[🛒]  *Trakteer Bot*',
                url: web
              }
 
            },
              {
              urlButton: {
-               displayText: 'Group Bot Lexa', 
+               displayText: '[💌]  *Official Gc*', 
                url: gc
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '👑Owner',
+               displayText: '[🦅]  *Owner*',
                id: '.owner',
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '💰Donasi',
-               id: '.donasi',
+               displayText: '[🚀]  *Speed Test*',
+               id: '.ping',
              }
 
            },
            {
              quickReplyButton: {
-               displayText: '🏷️Credits',
+               displayText: '[🏷️]  *Credits*',
                id: '.tqto',
              }
            }]
