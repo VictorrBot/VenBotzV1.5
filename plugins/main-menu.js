@@ -50,147 +50,142 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'edukasi', 'news', 'nsfw', 'xp', 'stiker', 'image', 'anime', 'kerangajaib', 'sound', 'vn', 'quotes', 'admin', 'rpg', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'vote', 'tanpakategori', 'owner', 'gift', 'thnks']
+  let arrayMenu = ['all', 'absen', 'asupan', 'rpg', 'anime', 'shope', 'primbon', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'audio', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
-    'main': 'Utama',
-    'game': 'Game',
-    'rpg': 'Epic Rpg',
-    'xp': 'Exp & Limit',
-    'fun': 'Fun',
-    'jodoh': 'Jodoh',
-    'gift': 'Gift',
-    'anime': 'Anime',
-    'hentai': 'NSFW',
-    'premium': 'Premium',
-    'anonymous': 'Anonymous Chat',
-    'kerang': 'Kerang Ajaib',
-    'sound': 'Sound Music',
-    'vn': 'Vn Imuet',
-    'quotes': 'Quotes',
-    'absen': 'Absen',
-    'vote': 'Voting',
-    'admin': 'Admin',
-    'group': 'Grup',
-    'news': 'News',
-    'internet': 'Internet',
-    'edukasi': 'Edukasi',
-    'quran': 'Islam',
-    'image': 'Random Image',
-    'sticker': 'Stiker',
-    'nulis': 'MagerNulis & Logo',
-    'audio': 'Pengubah Suara',
-    'downloader': 'Downloader',
-    'tools': 'Tools',
-    'database': 'Database',
-    'jadibot': 'Jadi Bot',
-    'info': 'Info',
-    '': 'Tanpa Kategori',
-    'thnks': 'THANKS TO',
+  'main': 'MENU UTAMA',
+  'advanced': 'ADVANCED',
+  'asupan': 'ASUPAN',
+  'absen': 'MENU ABSEN',
+  'anime': 'MENU ANIME',
+  'shope': 'MENU SHOPE',
+  'primbon': 'MENU PRIMBON',
+  'sticker': 'MENU CONVERT',
+  'downloader': 'MENU DOWNLOADER',
+  'xp': 'MENU EXP',
+  'fun': 'MENU FUN',
+  'game': 'MENU GAME',
+  'github': 'MENU GITHUB',
+  'group': 'MENU GROUP',
+  'image': 'MENU IMAGE',
+  'info': 'MENU INFO',
+  'internet': 'INTERNET',
+  'islam' : 'MENU ISLAMI',
+  'kerang': 'MENU KERANG',
+  'maker': 'MENU MAKER',
+  'owner': 'MENU OWNER',
+  'Pengubah Suara': 'PENGUBAH AUDIO',
+  'premium': 'PREMIUM MENU',
+  'quotes' : 'MENU QUOTES',
+  'rpg': 'MENU RPG',
+  'stalk': 'MENU STALK',
+  'shortlink': 'SHORT LINK',
+  'tools': 'MENU TOOLS',
+  'vote': 'MENU VOTING',
+  'nsfw': 'NSFW MENU', 
+  'asupan': 'ASUPAN MENU', 
+  'random': 'RANDOM MENU', 
+  'textpro': 'TEXT PRO MENU', 
+  'photooxy': 'PHOTO OXY MENU', 
   }
-  if (teks == 'game') tags = {
-    'game': 'Game'
+  if (teks == 'absen') tags = {
+    'absen': 'MENU ABSEN',
+    'vote': 'MENU VOTING',
   }
-  if (teks == 'xp') tags = {
-    'xp': 'Exp & Limit'
+  if (teks == 'anime') tags = {
+  'anime': 'MENU ANIME',
+    }
+  if (teks == 'shope') tags = {
+  'anime': 'MENU SHOPE',
+    }
+  if (teks == 'primbo') tags = {
+  'anime': 'MENU PRIMBON',
   }
-  if (teks == 'news') tags = {
-    'news': 'News'
+  if (teks == 'asupan') tags = {
+  'asupan': 'MENU ASUPAN',
   }
-  if (teks == 'edukasi') tags = {
-    'edukasi': 'Edukasi'
-  }
-  if (teks == 'nsfw') tags = {
-    'hentai': 'NSFW',
-    'nsfw': 'HENTAI',
-  }
-  if (teks == 'stiker') tags = {
-    'sticker': 'Stiker'
-  }
-  if (teks == 'rpg') tags = {
-    'rpg': 'Epic Rpg'
-  }
-  if (teks == 'kerangajaib') tags = {
-    'kerang': 'Kerang Ajaib'
-  }
-if (teks == 'sound') tags = {
-    'sound': 'Sound Music'
-  }
-if (teks == 'vn') tags = {
-    'vn': 'Vn Imuet'
-  }
-  if (teks == 'quotes') tags = {
-    'quotes': 'Quotes'
-  }
-  if (teks == 'admin') tags = {
-    'admin': 'admin'
-  }
-  if (teks == 'grup') tags = {
-    'group': 'Grup'
-  }
-  if (teks == 'premium') tags = {
-    'premium': 'Premium'
-  }
-  if (teks == 'internet') tags = {
-    'internet': 'Internet'
-  }
-  if (teks == 'image') tags = {
-    'image': 'Random Image'
-  }
-  if (teks == 'anonymous') tags = {
-    'anonymous': 'Anonymous Chat'
-  }
-  if (teks == 'nulis') tags = {
-    'nulis': 'MagerNulis & Logo'
+  if (teks == 'sticker') tags = {
+  'sticker': 'MENU CONVERT',
   }
   if (teks == 'downloader') tags = {
-    'downloader': 'Downloader'
+  'downloader': 'MENU DOWNLOADER',
   }
-  if (teks == 'tools') tags = {
-    'tools': 'Tools'
+  if (teks == 'xp') tags = {
+  'xp': 'MENU EXP',
   }
   if (teks == 'fun') tags = {
-    'fun': 'Fun',
-    'jodoh': 'Jodoh'
+  'fun': 'MENU FUN',
   }
-  if (teks == 'jodoh') tags = {
-    'jodoh': 'Jodoh'
+  if (teks == 'game') tags = {
+  'game': 'MENU GAME',
   }
-  if (teks == 'database') tags = {
-    'database': 'Database'
+  if (teks == 'github') tags = {
+  'github': 'MENU GITHUB',
   }
-  if (teks == 'vote') tags = {
-    'vote': 'Voting',
-    'absen': 'Absen'
+  if (teks == 'group') tags = {
+  'group': 'MENU GROUP',
   }
-    if (teks == 'anime') tags = {
-    'anime': 'Anime'
-  }
-  if (teks == 'quran') tags = {
-    'quran': 'Islam'
-  }
-  if (teks == 'gift') tags = {
-    'gift': 'Gift'
-  }
-  if (teks == 'audio') tags = {
-    'audio': 'Pengubah Suara'
-  }
-  if (teks == 'jadibot') tags = {
-    'jadibot': 'Jadi Bot'
+  if (teks == 'image') tags = {
+  'image': 'MENU IMAGE',
   }
   if (teks == 'info') tags = {
-    'info': 'Info'
+  'info': 'MENU INFO',
   }
-  if (teks == 'tanpakategori') tags = {
-    '': 'Tanpa Kategori'
+  if (teks == 'internet') tags = {
+  'internet': 'INTERNET',
   }
-  if (teks == 'thnks') tags = {
-    'thnks': 'THANKS TO'
+  if (teks == 'islam') tags = {
+  'islam' : 'MENU ISLAMI',
+  }
+  if (teks == 'kerang') tags = {
+  'kerang': 'MENU KERANG',
+  }
+  if (teks == 'maker') tags = {
+  'maker': 'MENU MAKER',
   }
   if (teks == 'owner') tags = {
     'owner': 'Owner',
     'host': 'Host',
     'advanced': 'Advanced'
+  }
+  if (teks == 'audio') tags = {
+  'Pengubah Suara': 'PENGUBAH SUARA',
+  }
+  if (teks == 'text') tags = {
+  'text': 'MAKER TEXT',
+  }
+  if (teks == 'premium') tags = {
+  'premium': 'PREMIUM MENU',
+  }
+  if (teks == 'quotes') tags = {
+  'quotes' : 'MENU QUOTES',
+  }
+  if (teks == 'rpg') tags = {
+  'rpg': 'MENU RPG',
+  }
+  if (teks == 'stalk') tags = {
+  'stalk': 'MENU STALK',
+  }
+  if (teks == 'shortlink') tags = {
+  'shortlink': 'SHORT LINK',
+  }
+  if (teks == 'tools') tags = {
+  'tools': 'MENU TOOLS',
+  }
+  if (teks == 'nsfw') tags = {
+  'nsfw': 'NSFW MENU', 
+  }
+  if (teks == 'asupan') tags = {
+  'asupan': 'ASUPAN MENU', 
+  }
+  if (teks == 'random') tags = {
+  'random': 'RANDOM MENU', 
+  }
+  if (teks == 'textpro') tags = {
+  'textpro': 'TEXT PRO MENU', 
+  }
+  if (teks == 'photooxy') tags = {
+  'photooxy': 'PHOTO OXY MENU', 
   }
 
 //━━━━━━━━[ DATABASE USER ]━━━━━━━━//
