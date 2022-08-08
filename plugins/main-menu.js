@@ -356,75 +356,75 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   }, {
                   "title": "🗳️ 〉ɞ 『 Vote & Absen 』",
                   "description": "Group only!",
-                  "rowId": `${_p} vote`
+                  "rowId": "? vote"
                 }, {
                   "title": "⛩️ 〉ɞ 『 Anime 』",
                   "description": "Bang? Anjir wibu...",
-                  "rowId": `${_p} anime`
+                  "rowId": "? anime"
                 }, {
                   "title": "↳♀️┃ASUPAN",
                   "description": "Asupan Cecan Di Berbagai Negara",
-                  "rowId": `${_p}? asupan`
+                  "rowId": "? asupan"
                 }, {
                   "title": "🎫 〉ɞ 『 Sticker 』",
                   "description": "Membuat sticker yang unik!",
-                  "rowId": `${_p} sticker`
+                  "rowId": "? sticker"
                 }, {
                   "title": "📥 〉ɞ 『 Downloader 』",
                   "description": "Download Sesuatu diBot!",
-                  "rowId": `${_p} downloader`
+                  "rowId": "? downloader"
                 }, {
                   "title": "📈 〉ɞ 『 Exp & Limit 』",
                   "description": "Ayo tingkatkan level mu..!",
-                  "rowId": `${_p} xp`
+                  "rowId": "? xp"
                 }, {
                   "title": "🧩 〉ɞ 『 Fun 』",
                   "description": "Sangat Family Friendly...",
-                  "rowId": `${_p} fun`
+                  "rowId": "? fun"
                 }, {
                   "title": "🎮 〉ɞ 『 Game 』",
                   "description": "Gamenya seru seru kak...",
-                  "rowId": `${_p} game`
+                  "rowId": "? game"
                 }, {
-                  "title": "↳🧰┃GITHUB",
+                  "title": "🧰 〉ɞ 『 Github 』",
                   "description": "Unduh / Search Github Lewat Bot",
-                  "rowId": `${_p}? github`
+                  "rowId": "? github"
                 }, {
                   "title": "👥 〉ɞ 『 Group 』",
                   "description": "Group Only!",
-                  "rowId": `${_p} group`
+                  "rowId": "? group"
                 }, {
-                  "title": "↳🖼┃IMAGE",
+                  "title": "🖼 〉ɞ 『 Image 』",
                   "description": "Mendapatkan Image Random Dari Bot",
-                  "rowId": `${_p}? image`
+                  "rowId": "? image"
                 }, {
                   "title": "💻 〉ɞ 『 Internet 』",
                   "description": "Cari Sesuatu yang menarik!",
-                  "rowId": `${_p} internet`
+                  "rowId": "? internet"
                 }, {
                   "title": "☪️ 〉ɞ 『 Islamic 』",
                   "description": "Tobat Yuk Kak...",
-                  "rowId": `${_p} islami`
+                  "rowId": "? islami"
                 }, {
                   "title": "🐚 〉ɞ 『 Kerang 』",
                   "description": "Menurut Kerang ajaib...!",
-                  "rowId": `${_p} kerangajaib`
+                  "rowId": "? kerang ajaib"
                 }, {
-                  "title": "↳✒️┃MAKER",
+                  "title": "✒️ 〉ɞ 『 Maker 』",
                   "description": "Membuat Karya Seni",
-                  "rowId": `${_p}? maker`
+                  "rowId": "? maker"
                 }, {
-                  "title": "↳👑┃OWNER",
+                  "title": "👑 〉ɞ 『 Owner 』",
                   "description": "Hanya Owner Yang Bisa Meng-Akses",
-                  "rowId": `${_p}? owner`
+                  "rowId": "? owner"
                 }, {
                   "title": "🎙️ 〉ɞ 『 Voice 』",
                   "description": "Voice Changer...",
-                  "rowId": `${_p} audio`
+                  "rowId": "? audio"
                 }, {
                   "title": "🌟 〉ɞ 『 Premium 』",
                   "description": "Premium Users Only!",
-                  "rowId": `${_p} premium`
+                  "rowId": "? premium"
                 }, {
                   "title": "📑 〉ɞ 『 Quotes 』",
                   "description": "Random Teks...",
@@ -432,37 +432,37 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 }, {
                   "title": "🌱 〉ɞ 『 Rpg 』",
                   "description": "Game Epic Rpg ! ",
-                  "rowId": `${_p} rpg`
+                  "rowId": "? rpg"
                 }, {
-                  "title": "↳🔭┃STALKER",
+                  "title": "🔭 〉ɞ 『 Stalker 』",
                   "description": "Menguntit Mantan Ya?",
-                  "rowId": `${_p}? stalk`
+                  "rowId": "? stalk"
                 }, {
-                  "title": "↳🖇️┃SHORT LINK",
+                  "title": "🖇️ 〉ɞ 『 ShortLink 』",
                   "description": "Short Link Melalui Bot",
-                  "rowId": `${_p}? shortlink`
+                  "rowId": "? shortlink"
                 }, {
                   "title": "🧰 〉ɞ 『 Tools 』",
                   "description": "Mungkin ini bisa membantu mu...",
-                  "rowId": `${_p} tools`
+                  "rowId": "? tools"
                 }, {
-                  "title": "↳📃┃TEXT MAKER",
+                  "title": "📃 〉ɞ 『 Text Maker 』",
                   "description": "Membuat Text Menjadi Indah",
-                  "rowId": `${_p}? text`
+                  "rowId": "? text"
                 }, {
                   "title": "🔞 〉ɞ 『 Nsfw 』",
                   "description": "Adick adick jangan liat ya...",
-                  "rowId": `${_p} nsfw`
+                  "rowId": "? nsfw"
                 }, {
-                  "title": "↳🎰┃RANDOM",
+                  "title": "🎰 〉ɞ 『 Random 』",
                   "description": "Kurang Kerjaan Mampir Saja Kesini",
-                  "rowId": `${_p}? random`
+                  "rowId": "? random"
                 }, {
-                  "title": "↳⛄┃TEXT PRO",
+                  "title": "⛄ 〉ɞ 『 TextPro 』",
                   "description": "Membuat Text Menjadi Indah V Image",
-                  "rowId": `${_p}? textpro`
+                  "rowId": "? textpro"
                 }, {
-                  "title": "↳🤳┃PHOTO OXY",
+                  "title": "🤳 〉ɞ 『 Photo Oxt 』",
                   "description": "Photo Oxt Melalui Bot",
                   "rowId": `${_p}? textpro`
                 }
@@ -470,13 +470,13 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 "title": "▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」"
               },               {
                 "rows": [{
-                  "title": `↳⬣🤴┃OWNER BOT`,
+                  "title": `🤴 〉ɞ 『 Owner 』`,
                   "description": "Nomor Owner",
                   "rowId": `.owner`
                 },{
                   "title": "ℹ️ 〉ɞ 『 Info 』",
                   "description": "Fitur fitur info...",
-                  "rowId": `${_p} info`
+                  "rowId": "? info"
                 }],
                 "title": "▮𝗜𝗻𝗳𝗼 」"
               }
