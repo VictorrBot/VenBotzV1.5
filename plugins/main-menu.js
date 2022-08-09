@@ -352,39 +352,39 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 "rows": [{
                   "title": "💬 〉ɞ 『 Semua Perintah 』",
                   "description": "Memberikan Semua Fitur ⌬ VenBotz",
-                  "rowId": '.all'
+                  "rowId": `${_p}? all`
                   }, {
                   "title": "🗳️ 〉ɞ 『 Vote & Absen 』",
                   "description": "Group only!",
-                  "rowId": "? vote"
+                  "rowId": `${_p}? vote`
                 }, {
                   "title": "⛩️ 〉ɞ 『 Anime 』",
                   "description": "Bang? Anjir wibu...",
-                  "rowId": "? anime"
+                  "rowId": `${_p}? anime`
                 }, {
                   "title": "↳♀️┃ASUPAN",
                   "description": "Asupan Cecan Di Berbagai Negara",
-                  "rowId": "? asupan"
+                  "rowId": `${_p}? asupan`
                 }, {
                   "title": "🎫 〉ɞ 『 Sticker 』",
                   "description": "Membuat sticker yang unik!",
-                  "rowId": "? sticker"
+                  "rowId": `${_p}? Sticker`
                 }, {
                   "title": "📥 〉ɞ 『 Downloader 』",
                   "description": "Download Sesuatu diBot!",
-                  "rowId": "? downloader"
+                  "rowId": `${_p}? downloader`
                 }, {
                   "title": "📈 〉ɞ 『 Exp & Limit 』",
                   "description": "Ayo tingkatkan level mu..!",
-                  "rowId": "? xp"
+                  "rowId": `${_p}? xp`
                 }, {
                   "title": "🧩 〉ɞ 『 Fun 』",
                   "description": "Sangat Family Friendly...",
-                  "rowId": "? fun"
+                  "rowId": `${_p}? fun`
                 }, {
                   "title": "🎮 〉ɞ 『 Game 』",
                   "description": "Gamenya seru seru kak...",
-                  "rowId": "? game"
+                  "rowId": `${_p}? game`
                 }, {
                   "title": "🧰 〉ɞ 『 Github 』",
                   "description": "Unduh / Search Github Lewat Bot",
