@@ -404,7 +404,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 }, {
                   "title": "☪️ 〉ɞ 『 Islamic 』",
                   "description": "Tobat Yuk Kak...",
-                  "rowId": "? islami"
+                  "rowId": `${_p}? islam`
                 }, {
                   "title": "🐚 〉ɞ 『 Kerang 』",
                   "description": "Menurut Kerang ajaib...!",
