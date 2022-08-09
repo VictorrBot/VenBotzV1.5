@@ -1,45 +1,115 @@
-let fetch = require('node-fetch')
-const { createHash } = require('crypto')
-let Reg = /(.*)([.|])([0-9]*)$/i
-let handler = async function (m, { text, usedPrefix }) {
+import { createHash } from 'crypto'
+import fetch from 'node-fetch'
+let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
+
+let handler = async function (m, { text, usedPrefix, command }) {
+	function pickRandom(list) {
+  return list[Math.floor(Math.random() * list.length)]
+}
+	let namae = conn.getName(m.sender)
+	const sections = [
+	{
+	title: "Select Your Age Here !",
+	rows: [
+	    {title: "Random Years", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
+	]
+    },
+    {
+	title: "O L D",
+	rows: [
+	    {title: "30 Years", rowId: '.daftar ' + namae + '.30 '},
+	    {title: "29 Years", rowId: '.daftar ' + namae + '.29 '},
+	    {title: "28 Years", rowId: '.daftar ' + namae + '.28 '},
+	{title: "27 Years", rowId: '.daftar ' + namae + '.27 '},
+	{title: "26 Years", rowId: '.daftar ' + namae + '.26 '},
+	{title: "25 Years", rowId: '.daftar ' + namae + '.25 '},
+	{title: "24 Years", rowId: '.daftar ' + namae + '.24 '},
+	{title: "23 Years", rowId: '.daftar ' + namae + '.23 '},
+	{title: "22 Years", rowId: '.daftar ' + namae + '.22 '},
+	{title: "21 Years", rowId: '.daftar ' + namae + '.21 '}
+	]
+    },
+    {
+	title: "Y O U N G",
+	rows: [
+	    {title: "20 Years", rowId: '.daftar ' + namae + '.20 '},
+	    {title: "19 Years", rowId: '.daftar ' + namae + '.19 '},
+	    {title: "18 Years", rowId: '.daftar ' + namae + '.18 '},
+	{title: "17 Years", rowId: '.daftar ' + namae + '.17 '},
+	{title: "16 Years", rowId: '.daftar ' + namae + '.16 '},
+	{title: "15 Years", rowId: '.daftar ' + namae + '.15 '},
+	{title: "14 Years", rowId: '.daftar ' + namae + '.14 '},
+	{title: "13 Years", rowId: '.daftar ' + namae + '.13 '},
+	{title: "12 Years", rowId: '.daftar ' + namae + '.12 '},
+	{title: "11 Years", rowId: '.daftar ' + namae + '.11 '},
+	{title: "10 Years", rowId: '.daftar ' + namae + '.10 '},
+	{title: "9 Years", rowId: '.daftar ' + namae + '.9 '}
+	]
+    },
+]
+
+const listMessage = {
+  text: `│›Please select your age at the bottom button...`,
+  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔> Want a costume name? type *${usedPrefix + command} yourname.age*`,
+  title: "▢- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -",
+  buttonText: "Click Here !",
+  sections
+}
+
   let user = global.db.data.users[m.sender]
-  let pantek = 'https://telegra.ph/file/b65957f39a82395bb09d0.jpg'
-  if (user.registered === true) throw `Anda sudah terdaftar\nMau daftar ulang? ${usedPrefix}unreg <SN|SERIAL NUMBER> \n\n jika anda lupa sn silahkan ketik ${usedPrefix}sn`
-  if (!Reg.test(text)) throw `Format salah!\nContoh: *${usedPrefix}daftar ${conn.getName(m.sender)}.17*`
+  if (user.registered === true) throw `[💬] Kamu sudah terdaftar\nMau daftar ulang? *${usedPrefix}unreg <SERIAL NUMBER>*`
+  if (!Reg.test(text)) return conn.sendMessage(m.chat, listMessage, { quoted: m })
   let [_, name, splitter, age] = text.match(Reg)
-  let totalreg = Object.keys(global.db.data.users).length
-  if (!name) throw 'Nama tidak boleh kosong!'
-  if (!age) throw 'Umur tidak boleh kosong!'
-  if (age < 12) throw 'Maaf, Anda belum bisa mendaftar.\n*Minimal umur 12 Ke Atas*'
-  if (age > 30) throw 'Maaf, Anda terlalu tua.'
-  user.name = name
-  user.age = parseInt(age)
+  if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
+  if (!age) throw 'Umur tidak boleh kosong (Angka)'
+  age = parseInt(age)
+  if (age > 30) throw 'WOI TUA (。-`ω´-)'
+  if (age < 5) throw 'Halah dasar bocil'
+  user.name = name.trim()
+  user.age = age
   user.regTime = + new Date
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
-  let caption = `
-◪ *「 DAFTAR BERHASIL 」*
-╰───────────────────╮
-╭───────────────────╯
-├❏ Nama : ${name}
-├❏ Umur : ${age} tahun
-├❏ ID    : ${pickRandom(['GGA0QH119J1','JPA017P02HA1','PWJROSAIEJ','LAOFOODJQ','PWJFCIFIF','QBBVAODEPZ','QPWEJDNDJD','IQPQBAHSIF','UWUWIWOKPF','PQJDXBXB','AKSJALPQDN','HALAKDILQU','IAIIWIICCIS','KQPSNWO','BSBANSKA','JANSNDKSOS','JDKALDKKAPPPP','KAKALALPCLCLJA','PWWJ017027GA14','19QPDKALLH61J','PWJSJDDUYSYSHSU','1001UQOXJ9JJDY','PQPSODUE107','BBBAKZOOX','00071','WKESOAKWLA','104JALOA9','OSBDOSODO','PWODJDOSKFJSOO','OWJCKEOS','PAJDISO','OSJDOWO','BABAOALKS','PWKW827LA9PA0','PWOEOOOJF','LCKDI2027H393P','IWUEUJEDGWEUEUE','GGGGGGGGHQJU127','HAGFUUXUQP3','P0000009769767T0O87Y5','0TT9I4UO43','P7YYRE8583E6','NZNSJEO','P8Y4W38P0R','P8R6IOP4EU-HG0','0729OWRU','JJJJJJJJAGFIS0W67','000087','BbL016JJQBCSr54OwwW0','BbJdQ0X37ohL016HhqK','BbJdQ0X37ohL016HhqK','GgGddSsssss1039','HAOSOWODJSO','BVjd173k6BEk','AEOKKAKSKKAK20468','BBWUK017KASK','COLIMAJSOAOOAOK1','1238PBLLWO20','KODE123','jajsoskskskOOoO0292','GAGHWPPWSIJ','PWEUPiwpepwp02928','000000723','QPWOEJSJAL','BBAHUSQPEI','HHGGGAGAGODPF','PUS1383PW0292838','HHHB203828LALJK','FFAFUAFAGGAFAFOWVA','PWKDIAPDHZOA','QPWOEUDMZ','103838PW02XLAK','AWOAOAKSPAJDOA','bbbaoduwuslp','kawpajeif','1037pWjs0273BBNjK1','Or4nGB3g04N71nk','Hhhhhhhpwishahhhh','Paosjsh102','Vvvavahsi239hOwpP','PAH103891','RAPEHAL028473','0193910392','103892928','0293829293','02838292','WPPPJSUEUND','01387482923828','gqlI000iwhBYYj0239','DGAOOW','PWOEUDOAO','OSODODOEOEIE','OWRHWOKDIRE','BXKKWCOEDMJCIE','BBDGWOPDDMEO','148920392949202','WOEIOWEOO','19388292929383','MODARSIAHANJINK','BEBEOAODAPJ','LVOWOWIEPADH','AIMALIVETOGOW','JUSTSKOSAO','PW2039LSHDOW','BVOVOVOVUUDEUA307','027492838','01398293','TAPIUPITKAOE103982','019382939','02848292838','OWOWOWOJDJADJLA019','PE023802794949nbK','owjfLjsoKhIOauwo','JKlskeoKJJTRYOJc','IHUOFEtUKPJVD302','HJPgFTIBDTI','029292848','IgwoekdkdomsB','HJOKJYYUlns','INNSAPTAILOEAJD','TAIANJSGSIAOPA','0238829103','02838385842111','9372893739991','BACHEUADL','RC047','BRAINTLUBA0284','DDDDDDDSALDKOE1048','11020393910101010201047GbkL','BrADIopaSLyeYA','JSJDJAKDSKLLLLAPRO','PROGAMERYT123','47492837','923772','BACHELAOF','1038828282','VAKDPOESMAQ0079'])}
-├❏ SN   : ${sn}
-├❒ Total User : ${totalreg} nomor
-╰───────────────────╯
+  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
+  let cap = `
+┏─• *ᴜsᴇʀs*
+│▸ *sᴛᴀᴛᴜs:* ☑️ sᴜᴄᴄᴇssғᴜʟ
+│▸ *ɴᴀᴍᴇ:* ${name}
+│▸ *ᴀɢᴇ:* ${age} ʏᴇᴀʀs
+│▸ *sɴ:* ${sn}
+┗────···
 
-_*Note*_ :
--Kode ID jangan sampai lupa! Karna Diantara Kodenya adalah kode gift yang berhadiah! Jika Anda Beruntung!
--Kalau mau unreg, lupa sn ketik ${usedPrefix}sn
-`.trim()
-await conn.send2ButtonLoc(m.chat, await(await fetch(fla + 'Daftar')).buffer(), caption, watermark, 'Menu', `.menu`, 'Tutorial', `.tutorial`, m)
+ᴅᴀᴛᴀ ᴜsᴇʀ ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴅɪᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ, ᴅɪᴊᴀᴍɪɴ ᴀᴍᴀɴ ᴛᴀɴᴘᴀ ᴛᴇʀsʜᴀʀᴇ (. ❛ ᴗ ❛.)
+`
+  let buttonMessage= {
+'document':{'url':sgc},
+'mimetype':global.ddocx,
+'fileName':'- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -',
+'fileLength':fsizedoc,
+'pageCount':fpagedoc,
+'contextInfo':{
+'forwardingScore':555,
+'isForwarded':true,
+'externalAdReply':{
+'mediaUrl':global.sig,
+'mediaType':2,
+'previewType':'pdf',
+'title':global.titlebot,
+'body':global.titlebot,
+'thumbnail':await(await fetch('https://telegra.ph/file/4a7e5f18efaadec18a7a0.jpg')).buffer(),
+'sourceUrl':sgc}},
+'caption':cap,
+'footer':botdate,
+'buttons':[
+{'buttonId':'.menu','buttonText':{'displayText':'ᴍᴇɴᴜ'},'type':1},
+{'buttonId':'.donasi','buttonText':{'displayText':'ᴅᴏɴᴀsɪ'},'type':1}
+],
+'headerType':6}
+    await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
 }
-handler.help = ['daftar <nama|umur>','register <nama|umur>','verifikasi <nama|>umur']
-handler.tags = ['main']
-handler.command = /^daftar|register|verivikasi$/i
+handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
+handler.tags = ['xp']
 
-module.exports = handler
+handler.command = /^(daftar|verify|reg(ister)?)$/i
 
-function pickRandom(list) {
-  return list[Math.floor(Math.random() * list.length)]
-}
+export default handler
