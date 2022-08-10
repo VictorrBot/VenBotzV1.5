@@ -396,7 +396,7 @@
       "level": null,
       "pasangan": "6282155152869@s.whatsapp.net",
       "pc": 0,
-      "exp": 9000,
+      "exp": 6854,
       "coin": 0,
       "atm": 0,
       "limit": 1000000000000000000,
@@ -3405,7 +3405,7 @@
       "level": null,
       "pasangan": "",
       "pc": 0,
-      "exp": 23150,
+      "exp": 13112,
       "coin": 0,
       "atm": 0,
       "limit": 1000000000000000000,
@@ -18230,10 +18230,10 @@
       "lastSuccess": 1660134981923
     },
     "tembak.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1660135121353,
-      "lastSuccess": 1660135121353
+      "total": 2,
+      "success": 2,
+      "last": 1659859958504,
+      "lastSuccess": 1659859958504
     },
     "terima.js": {
       "total": 2,
@@ -18596,16 +18596,16 @@
       "lastSuccess": 1660134991181
     },
     "game-math.js": {
-      "total": 5,
-      "success": 3,
-      "last": 1660135101061,
-      "lastSuccess": 1660135101061
+      "total": 4,
+      "success": 2,
+      "last": 1660134968677,
+      "lastSuccess": 1660134968677
     },
     "getdatabase.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1660135042934,
-      "lastSuccess": 1660135042934
+      "total": 2,
+      "success": 2,
+      "last": 1660134949494,
+      "lastSuccess": 1660134949494
     }
   },
   "msgs": {},
