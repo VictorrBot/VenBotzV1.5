@@ -396,13 +396,13 @@
       "level": null,
       "pasangan": "6282155152869@s.whatsapp.net",
       "pc": 0,
-      "exp": 6854,
+      "exp": 6747,
       "coin": 0,
       "atm": 0,
       "limit": 1000000000000000000,
       "tigame": 50,
       "lastclaim": 0,
-      "money": 999999999999931400,
+      "money": 1000000000000000000,
       "diamond": 0,
       "iron": 0,
       "emas": 0,
@@ -782,13 +782,13 @@
       "level": null,
       "pasangan": "",
       "pc": 0,
-      "exp": 2709,
+      "exp": 2643,
       "coin": 0,
       "atm": 0,
       "limit": 1000000000000000000,
       "tigame": 50,
       "lastclaim": 0,
-      "money": 1000000000000000000,
+      "money": 999999999999995000,
       "diamond": 0,
       "iron": 0,
       "emas": 0,
@@ -871,7 +871,7 @@
       "Banneduser": false,
       "BannedReason": "",
       "warn": 0,
-      "afk": 1660135010391,
+      "afk": -1,
       "afkReason": "",
       "anakkucing": 0,
       "anakkuda": 0,
@@ -901,7 +901,7 @@
       "lastweekly": 0,
       "lastmonthly": 0,
       "lastjb": 0,
-      "lastrob": 1660134981923,
+      "lastrob": 0,
       "lastdaang": 0,
       "lastngojek": 0,
       "lastgrab": 0,
@@ -2286,7 +2286,7 @@
       "level": 0,
       "pasangan": "",
       "pc": 0,
-      "exp": 88,
+      "exp": 66,
       "coin": 0,
       "atm": 0,
       "limit": 20,
@@ -3402,10 +3402,10 @@
       "laper": 100,
       "tprem": 0,
       "stamina": 100,
-      "level": null,
+      "level": 0,
       "pasangan": "",
       "pc": 0,
-      "exp": 13112,
+      "exp": 3021,
       "coin": 0,
       "atm": 0,
       "limit": 1000000000000000000,
@@ -3544,7 +3544,7 @@
       "premiumTime": 0,
       "job": "Pengangguran",
       "lbars": "[▒▒▒▒▒▒▒▒▒]",
-      "role": "Star king dragon",
+      "role": "Warrior V",
       "autolevelup": true,
       "lastIstigfar": 0,
       "glimit": 20,
@@ -18194,9 +18194,9 @@
       "lastSuccess": 1660134180527
     },
     "tools-profile.js": {
-      "total": 4,
+      "total": 3,
       "success": 1,
-      "last": 1660134966680,
+      "last": 1659862893644,
       "lastSuccess": 1659862893644
     },
     "anti-awokawok.js": {
@@ -18224,10 +18224,10 @@
       "lastSuccess": 1659859880070
     },
     "rpg-merampok.js": {
-      "total": 3,
-      "success": 1,
-      "last": 1660134981923,
-      "lastSuccess": 1660134981923
+      "total": 2,
+      "success": 0,
+      "last": 1659859921673,
+      "lastSuccess": 0
     },
     "tembak.js": {
       "total": 2,
@@ -18266,10 +18266,10 @@
       "lastSuccess": 1660129205360
     },
     "group-afk.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1660135010391,
-      "lastSuccess": 1660135010391
+      "total": 6,
+      "success": 6,
+      "last": 1660128912865,
+      "lastSuccess": 1660128912865
     },
     "owner-sf.js": {
       "total": 5,
@@ -18344,10 +18344,10 @@
       "lastSuccess": 1659862743016
     },
     "xp-limit.js": {
-      "total": 11,
-      "success": 11,
-      "last": 1660134946929,
-      "lastSuccess": 1660134946929
+      "total": 10,
+      "success": 10,
+      "last": 1660134754743,
+      "lastSuccess": 1660134754743
     },
     "xp-buylimit.js": {
       "total": 5,
@@ -18356,16 +18356,16 @@
       "lastSuccess": 1660134760356
     },
     "owner-cheatall.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1660134983449,
-      "lastSuccess": 1660134983449
-    },
-    "xp-my.js": {
       "total": 6,
       "success": 6,
-      "last": 1660134970742,
-      "lastSuccess": 1660134970742
+      "last": 1660134748148,
+      "lastSuccess": 1660134748148
+    },
+    "xp-my.js": {
+      "total": 5,
+      "success": 5,
+      "last": 1659863212590,
+      "lastSuccess": 1659863212590
     },
     "rpg-shop.js": {
       "total": 3,
@@ -18428,10 +18428,10 @@
       "lastSuccess": 0
     },
     "rpg-bank.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1660134963520,
-      "lastSuccess": 1660134963520
+      "total": 3,
+      "success": 3,
+      "last": 1659864293459,
+      "lastSuccess": 1659864293459
     },
     "rpg-use.js": {
       "total": 2,
@@ -18590,22 +18590,16 @@
       "lastSuccess": 1660133665385
     },
     "xp-leaderboard.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1660134991181,
-      "lastSuccess": 1660134991181
-    },
-    "game-math.js": {
-      "total": 4,
-      "success": 2,
-      "last": 1660134968677,
-      "lastSuccess": 1660134968677
-    },
-    "getdatabase.js": {
       "total": 2,
       "success": 2,
-      "last": 1660134949494,
-      "lastSuccess": 1660134949494
+      "last": 1660134763460,
+      "lastSuccess": 1660134763460
+    },
+    "game-math.js": {
+      "total": 3,
+      "success": 1,
+      "last": 1660134917190,
+      "lastSuccess": 1660134917190
     }
   },
   "msgs": {},
